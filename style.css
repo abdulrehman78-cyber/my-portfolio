@@ -1,0 +1,149 @@
+/* CASCADING DEMONSTRATION - Requirement 5  its mean most priotrity will overridethe lowest priority*/ 
+/* Element selector - lowest priority */
+body{
+    font-family: sans-serif;
+    height: 100%;
+}
+/* ID selector - highest priority */
+#main-intro{
+    background-color: rgb(201, 226, 235);
+    margin-top: -7px;
+    padding: 3px;
+}
+
+h1{
+    text-align: center;body{
+    font-family: sans-serif;
+    height: 100%;
+}
+#main-intro{
+    background-color: rgb(201, 226, 235);
+    margin-top: -7px;
+    padding: 3px;
+}
+h1{
+    text-align: center;
+}
+/* Sibling selector example */
+h2 + div {
+    margin-top: 15px;
+}
+p{
+    text-align: center;
+    color: rgb(59, 74, 133);
+}
+/* Class selector - medium priority */
+.skill-card{
+    padding: 9px;
+    position: absolute;
+    margin-left: 34px;
+}
+/* CONTEXTUAL SELECTORS - Requirement 4 */
+/* Child selector for skills */
+.skill-card > .skill-items {
+    display: inline-block;
+    margin: 5px;
+    background-color: rgb(181, 216, 181);
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 7px;
+}
+
+.project-card{
+    padding-top: 30px;
+}
+.project-card li{
+    padding: 3px;
+}
+.project-list a{
+text-decoration: none;
+color: rgb(70, 148, 238);
+padding: 5px;
+}
+.project-list:hover{
+color: rgb(33, 79, 33);
+cursor: pointer;
+}
+input[type="text"], input[type="email"] {
+    border-radius: 4px;
+    display: block;
+padding: 6px;
+width: 100%;
+margin: 4px;
+}
+a[target="_blank"] {
+    color: #6b7dcd;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(201, 199, 199);
+    padding: 15px;
+    text-align: center;
+    font-size: large;
+    color: rgb(116, 122, 128);
+    margin-top: 10px;
+   border-bottom: 2px solid grey;
+}
+
+}
+p{
+    text-align: center;
+    color: rgb(59, 74, 133);
+}
+.skill-card{
+    padding: 9px;
+    position: absolute;
+    margin-left: 34px;
+}
+.skill-items{
+background-color: rgb(181, 216, 181);
+border-radius: 5px;
+border: 1px solid white;
+margin: 2px;
+padding: 7px;
+}
+.project-card{
+    padding-top: 30px;
+}
+.project-card li{
+    padding: 3px;
+}
+/* Descendant selector for projects - Requirement 4 */
+.project-list a{
+text-decoration: none;
+color: rgb(70, 148, 238);
+padding: 5px;
+}
+/* Style first project differently - Requirement 3 */
+.project-list:first-child {
+    background-color: #bee9a9;
+    border-left: 1px solid #ffc107;
+    padding-left: 10px;
+}
+/* PSEUDO SELECTORS - Requirement 3 */
+.project-list:hover{
+background-color: rgb(194, 223, 194);
+cursor: pointer;
+}
+input[type="text"], input[type="email"] {
+    border-radius: 4px;
+    display: block;
+padding: 6px;
+width: 100%;
+margin: 4px;
+}
+a[target="_blank"] {
+    color: #6b7dcd;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(201, 199, 199);
+    padding: 15px;
+    text-align: center;
+    font-size: large;
+    color: rgb(116, 122, 128);
+    margin-top: 10px;
+   border-bottom: 2px solid grey;
+}
